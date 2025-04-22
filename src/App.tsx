@@ -1,25 +1,22 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home';
-import About from './pages/About';
-import { AppBar, Toolbar, Typography, Button } from '@mui/material';
+import Projects from './pages/Projects';
+import Contact from './pages/Contact';
+import Header from './components/Header';
+import Footer from './components/Footer';
+
 
 const App: React.FC = () => {
     return (
         <Router>
-            <AppBar position="static">
-                <Toolbar>
-                    <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                        My Vite + React App
-                    </Typography>
-                    <Button color="inherit" component={Link} to="/">Home</Button>
-                    <Button color="inherit" component={Link} to="/about">About</Button>
-                </Toolbar>
-            </AppBar>
+            <Header />
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/about" element={<About />} />
+                <Route path="/projects" element={<Projects />} />
+                <Route path="/contact" element={<Contact />} />
             </Routes>
+            <Footer />
         </Router>
     );
 };

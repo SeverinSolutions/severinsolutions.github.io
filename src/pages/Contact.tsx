@@ -1,12 +1,12 @@
 import React from 'react';
 import { Container, Typography, Button } from '@mui/material';
 
-const Home: React.FC = () => {
+const Contact: React.FC = () => {
     return (
         <div>
             <Container sx={{ mt: 4, mb: 4 }}>
                 <Typography variant="h2" component="h1" gutterBottom>
-                    Welcome to SeverinSolutions
+                    Welcome to SeverinSolutions (Contact)
                 </Typography>
                 <Typography variant="h5" component="h2" gutterBottom>
                     I'm Johan Lundmark, a Software Developer.
@@ -22,4 +22,4 @@ const Home: React.FC = () => {
     );
 };
 
-export default Home;
+export default Contact;
