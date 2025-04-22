@@ -3,9 +3,9 @@ import { Container, Typography, Button } from '@mui/material';
 
 const Contact: React.FC = () => {
     return (
-        <div>
-            <Container sx={{ mt: 4, mb: 4 }}>
-                <Typography variant="h2" component="h1" gutterBottom>
+        <>
+            <Container className='container' sx={{ mt: 4, mb: 4 }}>
+                <Typography variant="h4" component="h1" gutterBottom>
                     Welcome to SeverinSolutions (Contact)
                 </Typography>
                 <Typography variant="h5" component="h2" gutterBottom>
@@ -18,7 +18,7 @@ const Contact: React.FC = () => {
                     View My Projects
                 </Button>
             </Container>
-        </div>
+        </>
     );
 };
 

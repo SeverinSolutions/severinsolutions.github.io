@@ -1,17 +1,35 @@
 import React from 'react';
-import { AppBar, Toolbar, Typography, Button } from '@mui/material';
+import { AppBar, Toolbar, Typography, IconButton } from '@mui/material';
 import { Link } from 'react-router-dom';
+import HomeIcon from '@mui/icons-material/Home';
+import WorkIcon from '@mui/icons-material/Work';
+import ContactPageIcon from '@mui/icons-material/ContactPage';
 
 const Header: React.FC = () => {
     return (
         <AppBar position="static">
             <Toolbar>
-                <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+                <Typography variant="h5" sx={{ flexGrow: 1 }}>
                     SeverinSolutions
                 </Typography>
-                <Button color="inherit" component={Link} to="/">Home</Button>
-                <Button color="inherit" component={Link} to="/projects">Projects</Button>
-                <Button color="inherit" component={Link} to="/contact">Contact</Button>
+                <IconButton component={Link} to="/" color="inherit" aria-label="home">
+                    <HomeIcon />
+                    <Typography variant="h6" sx={{ display: { xs: 'none', sm: 'block' } }}>
+                        Home
+                    </Typography>
+                </IconButton>
+                <IconButton component={Link} to="/projects" color="inherit" aria-label="projects">
+                    <WorkIcon />
+                    <Typography variant="h6" sx={{ display: { xs: 'none', sm: 'block' } }}>
+                        Projects
+                    </Typography>
+                </IconButton>
+                <IconButton component={Link} to="/contact" color="inherit" aria-label="contact">
+                    <ContactPageIcon />
+                    <Typography variant="h6" sx={{ display: { xs: 'none', sm: 'block' } }}>
+                        Contact
+                    </Typography>
+                </IconButton>
             </Toolbar>
         </AppBar>
     );
