@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Grid, Typography } from '@mui/material';
 import ProjectCard from '../components/ProjectCard';
-import ProjectsData from "../assets/data/ProjectsData";
+import ProjectsData from "../assets/ProjectsData";
 
 
 const Projects: React.FC = () => {
