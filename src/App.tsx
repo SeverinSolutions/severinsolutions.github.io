@@ -1,17 +1,17 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { ThemeProvider } from '@mui/material/styles';
-import theme from './theme';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import Header from './components/Header';
 import Footer from './components/Footer';
+import Theme from "./Theme"
 
 
 const App: React.FC = () => {
     return (
-        <ThemeProvider theme={theme}>
+        <ThemeProvider theme={Theme}>
                 <Router>
                     <Header />
                     <Routes>

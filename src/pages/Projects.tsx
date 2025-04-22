@@ -1,24 +1,23 @@
 import React from 'react';
-import { Container, Typography, Button } from '@mui/material';
+import { Container, Grid, Typography } from '@mui/material';
+import ProjectCard from '../components/ProjectCard';
+import ProjectsData from "../assets/data/ProjectsData";
+
 
 const Projects: React.FC = () => {
     return (
-        <>
-            <Container className='container' sx={{ mt: 4, mb: 4 }}>
-                <Typography variant="h4" component="h1" gutterBottom>
-                    Welcome to SeverinSolutions (Projects)
-                </Typography>
-                <Typography variant="h5" component="h2" gutterBottom>
-                    I'm Johan Lundmark, a Software Developer.
-                </Typography>
-                <Typography variant="body1" paragraph>
-                    This is a brief introduction about yourself. You can mention your skills, interests, and what you are passionate about.
-                </Typography>
-                <Button variant="contained" color="primary" href="#projects">
-                    View My Projects
-                </Button>
-            </Container>
-        </>
+        <Container sx={{ mt: 4, mb: 4 }}>
+            <Typography variant="h4" component="h1" gutterBottom>
+                My Projects
+            </Typography>
+            <Grid container spacing={2}>
+                {ProjectsData.map((project, index) => (
+                    <Grid key={index}>
+                        <ProjectCard {...project} />
+                    </Grid>
+                ))}
+            </Grid>
+        </Container>
     );
 };
 
