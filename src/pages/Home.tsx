@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Typography, Button } from '@mui/material';
+import { Container, Typography } from '@mui/material';
 
 const Home: React.FC = () => {
     return (
@@ -12,11 +12,8 @@ const Home: React.FC = () => {
                     I'm Johan Lundmark, a Software Developer.
                 </Typography>
                 <Typography variant="body1" paragraph>
-                    This is a brief introduction about yourself. You can mention your skills, interests, and what you are passionate about.
+                    I previously worked as a nurse now moving my way into IT.
                 </Typography>
-                <Button variant="contained" color="primary" href="#projects">
-                    View My Projects
-                </Button>
             </Container>
         </>
     );
