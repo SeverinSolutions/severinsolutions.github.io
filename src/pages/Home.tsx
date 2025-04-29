@@ -1,55 +1,105 @@
 import React from 'react';
-import { Box, Container, List, ListItem, ListItemIcon, ListItemText, Typography } from '@mui/material';
-
+import {
+  Container,
+  Typography,
+  Card,
+  CardContent,
+  List,
+  ListItem,
+  ListItemText,
+  Divider
+} from '@mui/material';
+import WorkIcon from '@mui/icons-material/Work';
+import InfoIcon from '@mui/icons-material/Info';
+import ContactPageIcon from '@mui/icons-material/ContactPage';
 
 const Home: React.FC = () => {
-    return (
-        <Container sx={{ mt: 4, mb: 4 }}>
-            <Typography variant="h4" component="h1" gutterBottom align="center">
-                Welcome to SeverinSolutions
-            </Typography>
-            <Typography variant="subtitle1" component="h2" gutterBottom align="center">
-                Hello, I'm Johan Severin Lundmark, a software developer with a background in computer science and hands-on experience from working with multiple tech teams.
-            </Typography>
-            <Typography variant="body1" component="h2" gutterBottom align="center">
-                I'm now freelancing and open to new opportunities, whether it's short-term projects, long-term collaborations, or a full-time role.
-            </Typography>
+  return (
+    <Container
+      maxWidth="sm"
+      sx={{
+        mt: 4,
+        mb: 4,
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        textAlign: 'center',
+      }}
+    >
+        <Typography variant="h4" component="h1" gutterBottom>
+            Welcome
+        </Typography>
 
-            <Box sx={{ mt: 4, mb: 4 }}>
-                <Typography variant="h6" component="h3" gutterBottom>
-                    What I bring to the table:
-                </Typography>
-                <List>
-                    <ListItem>
-                        <ListItemText primary="Real-world development experience across the stack" />
-                    </ListItem>
-                    <ListItem>
-                        <ListItemText primary="A pragmatic, results-driven approach" />
-                    </ListItem>
-                    <ListItem>
-                        <ListItemText primary="Strong communication and a collaborative mindset" />
-                    </ListItem>
-                </List>
-            </Box>
+        <Typography variant="subtitle1" component="h2" gutterBottom>
+            I'm Johan Lundmark, a software developer with a background in computer science and real-world experience building software in collaborative tech teams.
+        </Typography>
 
-            <Box sx={{ mt: 4 }}>
-                <Typography variant="h6" component="h3" gutterBottom>
-                    Let's Connect:
-                </Typography>
-                <List>
-                    <ListItem>
-                        <ListItemText primary="Take a look at my projects to see what I've built" />
-                    </ListItem>
-                    <ListItem>
-                        <ListItemText primary="I'm currently available for hire" />
-                    </ListItem>
-                    <ListItem>
-                        <ListItemText primary="Want to know more about me? Head over to the about page" />
-                    </ListItem>
-                </List>
-            </Box>
-        </Container>
-    );
+        <Card sx={{ mt: 4, width: '100%', boxShadow: 3 }}>
+        <CardContent>
+            <Typography variant="h6" component="h3" gutterBottom>
+                What I Bringt to the Table
+            </Typography>
+            <List>
+                <ListItem>
+                    <ListItemText
+                    primary={
+                        <Typography variant="body1">
+                        <strong>Full-stack experience</strong> across real-world projects
+                        </Typography>
+                    }
+                    />
+                </ListItem>
+                <ListItem>
+                    <ListItemText
+                    primary={
+                        <Typography variant="body1">
+                        A <strong>pragmatic, results-driven approach</strong> to development
+                        </Typography>
+                    }
+                    />
+                </ListItem>
+                <ListItem>
+                    <ListItemText
+                    primary={
+                        <Typography variant="body1">
+                        <strong>Strong communication</strong> and a collaborative mindset
+                        </Typography>
+                    }
+                    />
+                </ListItem>
+            </List>
+        </CardContent>
+      </Card>
+
+      <Card sx={{ mt: 4, width: '100%', boxShadow: 3 }}>
+        <CardContent>
+            <Typography variant="h6" component="h3" gutterBottom>
+                Explore More About What I Do
+            </Typography>
+            <List>
+                <ListItem>
+                    <WorkIcon sx={{ color: 'primary.main', mr: 2 }} />
+                    <ListItemText
+                    primary="Check out my projects to see real-world examples of what I’ve built."
+                    />
+                </ListItem>
+                <ListItem>
+                    <ContactPageIcon sx={{ color: 'primary.main', mr: 2 }} />
+                    <ListItemText
+                    primary="I’m open to new opportunities freelance, contract, or full-time."
+                    />
+                </ListItem>
+                <ListItem>
+                    <InfoIcon sx={{ color: 'primary.main', mr: 2 }} />
+                    <ListItemText
+                    primary="Curious about who I am? Visit the about page for my background and values."
+                    />
+                </ListItem>
+            </List>
+        </CardContent>
+      </Card>
+    </Container>
+  );
 };
 
 export default Home;

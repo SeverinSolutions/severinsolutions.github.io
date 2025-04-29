@@ -7,7 +7,7 @@ import Contact from './pages/Contact';
 import About from './pages/About';
 import Header from './components/Header';
 import Footer from './components/Footer';
-import Theme from "./Theme"
+import Theme from "./theme"
 
 
 const App: React.FC = () => {
