@@ -7,7 +7,6 @@ import {
   List,
   ListItem,
   ListItemText,
-  Divider
 } from '@mui/material';
 import WorkIcon from '@mui/icons-material/Work';
 import InfoIcon from '@mui/icons-material/Info';
