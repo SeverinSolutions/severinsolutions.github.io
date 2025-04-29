@@ -1,5 +1,5 @@
 
-const ProjectsData = [
+const CurrentProjectData = [
     {
         title: "SeverinSolutions Webpage",
         image: "/images/placeholderImage1.png",
@@ -10,16 +10,6 @@ const ProjectsData = [
         githubReadme: "https://raw.githubusercontent.com/SeverinSolutions/severinsolutions.github.io/main/README.md",
         youtubeLink: "",
     },
-    {
-        title: "Project Two",
-        image: "/images/placeholderImage2.png",
-        description: "A brief description of Project One.",
-        problem: "Unique problem solved in Project One.",
-        skills: ["Node.js", "Express", "MongoDB"],
-        githubLink: "",
-        githubReadme: "",
-        youtubeLink: "",
-    },
 ];
 
-export default ProjectsData;
+export default CurrentProjectData;

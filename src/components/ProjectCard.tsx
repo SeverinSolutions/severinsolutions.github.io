@@ -50,8 +50,12 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
 
     return (
         <>
-            <Card sx={{ maxWidth: 345, margin: 2 }} onClick={handleOpen}>
-                <CardMedia component="img" height="140" image={image} alt={title} />
+            <Card sx={{ maxWidth: 345, margin: 2 }}>
+
+                {image && (
+                    <CardMedia component="img" height="140" image={image} alt={title} />
+                )}
+                
                 <CardContent>
                     <Typography gutterBottom variant="h5" component="div">
                         {title}
@@ -65,13 +69,17 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                     <Typography variant="body2" color="text.secondary">
                         <strong>Skills:</strong> {skills.join(', ')}
                     </Typography>
+                    <Button size="small" onClick={handleOpen} disabled={!githubLink}>
+                        Dokument
+                    </Button>
                     <Button size="small" component={Link} to={githubLink} target="_blank" disabled={!githubLink}>
-                        GitHub
+                        Github
                     </Button>
                     <Button size="small" component={Link} to={youtubeLink} target="_blank" disabled={!youtubeLink}>
-                        YouTube
+                        Youtube
                     </Button>
                 </CardContent>
+
             </Card>
             <ReadmeModal open={open} onClose={handleClose} readmeContent={readmeContent} />
         </>

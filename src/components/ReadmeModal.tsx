@@ -1,5 +1,5 @@
 import React from 'react';
-import { Dialog, DialogTitle, DialogContent, DialogActions, Button } from '@mui/material';
+import { Dialog, DialogContent, DialogActions, Button } from '@mui/material';
 import ReactMarkdown from 'react-markdown';
 
 interface ReadmeModalProps {
@@ -11,7 +11,6 @@ interface ReadmeModalProps {
 const ReadmeModal: React.FC<ReadmeModalProps> = ({ open, onClose, readmeContent }) => {
     return (
         <Dialog open={open} onClose={onClose} fullWidth maxWidth="md">
-            <DialogTitle>Project README</DialogTitle>
             <DialogContent>
                 <ReactMarkdown>{readmeContent}</ReactMarkdown>
             </DialogContent>
