@@ -26,14 +26,14 @@ const Projects: React.FC = () => {
         professional contributions.
       </Typography>
 
-      <Card sx={{ mt: 4, boxShadow: 3 }}>
+      <Card sx={{ mt: 4, boxShadow: 0, display: "flex", justifyContent: "center" }}> 
         <CardContent>
           <Box display="flex" alignItems="center" mb={2}>
             <BuildIcon sx={{ color: "primary.main", mr: 1 }} />
             <Typography variant="h6">In Progress</Typography>
           </Box>
-          <Typography variant="body2" mb={2}>
-            These are the projects I’m currently working on.
+          <Typography variant="body2" mb={2} >
+            I’m currently working on the following project(s).
           </Typography>
           <Grid container spacing={2}>
             {CurrentProjectData.map((project, index) => (
