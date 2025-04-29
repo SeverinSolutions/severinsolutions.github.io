@@ -7,6 +7,7 @@ const ProjectsData = [
         problem: "Using routing for Github pages is not recommended.",
         skills: ["Vite", "React", "TypeScript", "MUI"],
         githubLink: "https://github.com/SeverinSolutions/severinsolutions.github.io",
+        githubReadme: "https://raw.githubusercontent.com/SeverinSolutions/severinsolutions.github.io/main/README.md",
         youtubeLink: "",
     },
     {
@@ -16,6 +17,7 @@ const ProjectsData = [
         problem: "Unique problem solved in Project One.",
         skills: ["Node.js", "Express", "MongoDB"],
         githubLink: "",
+        githubReadme: "",
         youtubeLink: "",
     },
 ];
