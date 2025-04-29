@@ -40,6 +40,9 @@ const Contact: React.FC = () => {
                     <Typography variant="subtitle1" sx={{ color: '#0077cc' }}>
                         <strong>Software Developer</strong>
                     </Typography>
+                    <Typography variant="subtitle1">
+                        Gothenburg
+                    </Typography>
                 </Box>
             </Box>
 
