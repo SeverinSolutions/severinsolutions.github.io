@@ -1,85 +1,89 @@
-import React from 'react';
-import { Box, Card, CardContent, Container, Grid, Typography } from '@mui/material';
-import ProjectCard from '../components/ProjectCard';
-import ArchiveProjectData from '../assets/ArchiveProjectData';
-import CurrentProjectData from '../assets/CurrentProjectData';
-import LegacyProjectData from '../assets/LegacyProjectData';
-import BuildIcon from '@mui/icons-material/Build';
-import FolderIcon from '@mui/icons-material/Folder';
-import LockIcon from '@mui/icons-material/Lock';
-
+import React from "react";
+import {
+  Box,
+  Card,
+  CardContent,
+  Container,
+  Grid,
+  Typography,
+} from "@mui/material";
+import ProjectCard from "../components/ProjectCard";
+import ArchiveProjectData from "../assets/ArchiveProjectData";
+import CurrentProjectData from "../assets/CurrentProjectData";
+import LegacyProjectData from "../assets/LegacyProjectData";
+import BuildIcon from "@mui/icons-material/Build";
+import FolderIcon from "@mui/icons-material/Folder";
+import LockIcon from "@mui/icons-material/Lock";
 
 const Projects: React.FC = () => {
-    return (
-      <Container maxWidth="md" sx={{ mt: 4, mb: 4 }}>
-        {/* Page Title */}
-        <Typography variant="h4" component="h1" gutterBottom align="center">
-          Projects
-        </Typography>
-        <Typography variant="subtitle1" align="center" gutterBottom>
-          A selection of my work, from current development to archived and professional contributions.
-        </Typography>
-  
-        {/* In Progress */}
-        <Card sx={{ mt: 4, boxShadow: 3 }}>
-          <CardContent>
-            <Box display="flex" alignItems="center" mb={2}>
-              <BuildIcon sx={{ color: 'primary.main', mr: 1 }} />
-              <Typography variant="h6">In Progress</Typography>
-            </Box>
-            <Typography variant="body2" mb={2}>
-              These are the projects I’m currently working on.
-            </Typography>
-            <Grid container spacing={2}>
-              {CurrentProjectData.map((project, index) => (
-                <Grid item xs={12} sm={6} key={index}>
-                  <ProjectCard {...project} />
-                </Grid>
-              ))}
-            </Grid>
-          </CardContent>
-        </Card>
-  
-        {/* Project Archive */}
-        <Card sx={{ mt: 4, boxShadow: 3 }}>
-          <CardContent>
-            <Box display="flex" alignItems="center" mb={2}>
-              <FolderIcon sx={{ color: 'primary.main', mr: 1 }} />
-              <Typography variant="h6">Project Archive</Typography>
-            </Box>
-            <Typography variant="body2" mb={2}>
-              A collection of completed or shelved personal projects.
-            </Typography>
-            <Grid container spacing={2}>
-              {ArchiveProjectData.map((project, index) => (
-                <Grid item xs={12} sm={6} key={index}>
-                  <ProjectCard {...project} />
-                </Grid>
-              ))}
-            </Grid>
-          </CardContent>
-        </Card>
-  
-        {/* Legacy & Confidential */}
-        <Card sx={{ mt: 4, boxShadow: 3 }}>
-          <CardContent>
-            <Box display="flex" alignItems="center" mb={2}>
-              <LockIcon sx={{ color: 'primary.main', mr: 1 }} />
-              <Typography variant="h6">Legacy & Confidential</Typography>
-            </Box>
-            <Typography variant="body2" mb={2}>
-              Projects from university or professional environments, some of which are confidential.
-            </Typography>
-            <Grid container spacing={2}>
-              {LegacyProjectData.map((project, index) => (
-                <Grid item xs={12} sm={6} key={index}>
-                  <ProjectCard {...project} />
-                </Grid>
-              ))}
-            </Grid>
-          </CardContent>
-        </Card>
-      </Container>
-    );
-  };
+  return (
+    <Container maxWidth="md" sx={{ mt: 4, mb: 4 }}>
+      <Typography variant="h4" component="h1" gutterBottom align="center">
+        Projects
+      </Typography>
+      <Typography variant="subtitle1" align="center" gutterBottom>
+        A selection of my work, from current development to archived and
+        professional contributions.
+      </Typography>
+
+      <Card sx={{ mt: 4, boxShadow: 3 }}>
+        <CardContent>
+          <Box display="flex" alignItems="center" mb={2}>
+            <BuildIcon sx={{ color: "primary.main", mr: 1 }} />
+            <Typography variant="h6">In Progress</Typography>
+          </Box>
+          <Typography variant="body2" mb={2}>
+            These are the projects I’m currently working on.
+          </Typography>
+          <Grid container spacing={2}>
+            {CurrentProjectData.map((project, index) => (
+              <Grid key={index}>
+                <ProjectCard {...project} />
+              </Grid>
+            ))}
+          </Grid>
+        </CardContent>
+      </Card>
+
+      <Card sx={{ mt: 4, boxShadow: 3 }}>
+        <CardContent>
+          <Box display="flex" alignItems="center" mb={2}>
+            <FolderIcon sx={{ color: "primary.main", mr: 1 }} />
+            <Typography variant="h6">Project Archive</Typography>
+          </Box>
+          <Typography variant="body2" mb={2}>
+            A collection of completed or shelved personal projects.
+          </Typography>
+          <Grid container spacing={2}>
+            {ArchiveProjectData.map((project, index) => (
+              <Grid key={index}>
+                <ProjectCard {...project} />
+              </Grid>
+            ))}
+          </Grid>
+        </CardContent>
+      </Card>
+
+      <Card sx={{ mt: 4, boxShadow: 3 }}>
+        <CardContent>
+          <Box display="flex" alignItems="center" mb={2}>
+            <LockIcon sx={{ color: "primary.main", mr: 1 }} />
+            <Typography variant="h6">Legacy & Confidential</Typography>
+          </Box>
+          <Typography variant="body2" mb={2}>
+            Projects from university or professional environments, some of which
+            are confidential.
+          </Typography>
+          <Grid container spacing={2}>
+            {LegacyProjectData.map((project, index) => (
+              <Grid key={index}>
+                <ProjectCard {...project} />
+              </Grid>
+            ))}
+          </Grid>
+        </CardContent>
+      </Card>
+    </Container>
+  );
+};
 export default Projects;
