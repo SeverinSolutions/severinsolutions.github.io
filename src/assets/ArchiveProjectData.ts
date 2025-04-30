@@ -3,8 +3,8 @@ const ArchiveProjectData = [
     title: "SeverinSolutions Webpage",
     image: "/images/ss-webpage.png",
     description:
-      "This webpage will be used as a portfolio of my work and capabilities.",
-    problem: "Using routing for Github pages is not recommended.",
+      "A clean, responsive portfolio site showcasing my IT background, projects, and contact information.",
+    problem: "Deploying a React app on GitHub Pages posed challenges with routing.",
     skills: ["Vite", "React", "TypeScript", "MUI"],
     githubLink:
       "https://github.com/SeverinSolutions/severinsolutions.github.io",
