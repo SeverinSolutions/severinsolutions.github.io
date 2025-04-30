@@ -62,18 +62,22 @@ const Contact: React.FC = () => {
           Feel free to check out the links below.
         </Typography>
         <Box display="flex" justifyContent="center" gap={2} mt={2}>
-          <GitHubIcon
-            fontSize="large"
+          <a
             href="https://github.com/SeverinSolutions"
             target="_blank"
-            sx={{ cursor: "pointer" }}
-          />
-          <LinkedInIcon
-            fontSize="large"
+            rel="noopener noreferrer"
+            style={{ color: "inherit" }}
+          >
+            <GitHubIcon fontSize="large" sx={{ cursor: "pointer" }} />
+          </a>
+          <a
             href="https://www.linkedin.com/in/johan-lundmark-12189b218/"
             target="_blank"
-            sx={{ cursor: "pointer", color: "#0077b5" }}
-          />
+            rel="noopener noreferrer"
+            style={{ color: "#0077b5" }}
+          >
+            <LinkedInIcon fontSize="large" sx={{ cursor: "pointer" }} />
+          </a>
         </Box>
       </Box>
     </Container>

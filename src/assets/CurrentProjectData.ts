@@ -1,15 +1,15 @@
 const CurrentProjectData = [
   {
-    title: "SeverinSolutions Webpage",
-    image: "/images/placeholderImage1.png",
+    title: "Noberger Tid och Raportering System",
+    image: "/images/nobergergrav.PNG",
     description:
-      "This webpage will be used as a portfolio of my work and capabilities.",
-    problem: "Using routing for Github pages is not recommended.",
-    skills: ["Vite", "React", "TypeScript", "MUI"],
+      "Creating a system to manage time and workers for projects",
+    problem: "Limited budget",
+    skills: ["React"],
     githubLink:
-      "https://github.com/SeverinSolutions/severinsolutions.github.io",
+      "",
     githubReadme:
-      "https://raw.githubusercontent.com/SeverinSolutions/severinsolutions.github.io/main/README.md",
+      "",
     youtubeLink: "",
   },
 ];
