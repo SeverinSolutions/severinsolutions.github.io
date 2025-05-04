@@ -35,10 +35,15 @@ const Home: React.FC = () => {
         tech teams.
       </Typography>
 
+      <Typography variant="subtitle1" component="h2" gutterBottom>
+        I offer a range of services, including website development, system
+        maintenance and debugging, and thorough logical problem-solving.
+      </Typography>
+
       <Card sx={{ mt: 4, width: "100%", boxShadow: 3 }}>
         <CardContent>
           <Typography variant="h6" component="h3" gutterBottom>
-            What I Bringt to the Table
+            What I Bring to the Table
           </Typography>
           <List>
             <ListItem>
@@ -83,15 +88,15 @@ const Home: React.FC = () => {
           <List>
             <ListItem>
               <WorkIcon sx={{ color: "primary.main", mr: 2 }} />
-              <ListItemText primary="Check out my projects to see real-world examples of what I’ve built." />
+              <ListItemText primary="Explore my portfolio for real-world examples of my work." />
             </ListItem>
             <ListItem>
               <ContactPageIcon sx={{ color: "primary.main", mr: 2 }} />
-              <ListItemText primary="I’m open to new opportunities freelance, contract, or full-time." />
+              <ListItemText primary="Actively seeking new freelance, contract, or full-time opportunities. Let's connect!" />
             </ListItem>
             <ListItem>
               <InfoIcon sx={{ color: "primary.main", mr: 2 }} />
-              <ListItemText primary="Curious about who I am? Visit the about page for my background and values." />
+              <ListItemText primary="Curious to learn more about my journey and values? Head over to my about page." />
             </ListItem>
           </List>
         </CardContent>
