@@ -4,12 +4,13 @@ import PeopleIcon from "@mui/icons-material/People";
 import EngineeringIcon from "@mui/icons-material/Engineering";
 import FavoriteIcon from "@mui/icons-material/Favorite";
 import BuildIcon from "@mui/icons-material/Build";
+import LightbulbIcon from "@mui/icons-material/Lightbulb";
 
 const About: React.FC = () => {
   return (
     <Container maxWidth="sm" sx={{ mt: 4, mb: 4 }}>
       <Typography variant="h4" component="h1" gutterBottom align="center">
-        About Me
+        Behind the Code
       </Typography>
       <Typography
         variant="subtitle1"
@@ -17,9 +18,29 @@ const About: React.FC = () => {
         gutterBottom
         align="center"
       >
-        I’m more than just a software developer. I bring life experience,
-        curiosity, and a collaborative mindset to every team I join.
+        Beyond my technical skills as a software developer, I understand the
+        importance of a strong team environment. I bring valuable life
+        experience, a natural curiosity, and a collaborative spirit to every
+        project and team I become a part of.
       </Typography>
+
+      <Card sx={{ mt: 4, width: "100%", boxShadow: 3 }}>
+        <CardContent>
+          <Box display="flex" alignItems="center" mb={1}>
+            <LightbulbIcon sx={{ color: "primary.main", mr: 1 }} />
+            <Typography variant="h6">My Path to Programming</Typography>
+          </Box>
+          <Typography variant="body1">
+            It started with my interest in the growing reliance on machines and
+            advanced tools, leading me to pursue civil engineering in
+            electronics. It was during this education that I was introduced to
+            programming. I found myself increasingly drawn to it, spending more
+            time coding than on other subjects. This growing enjoyment
+            ultimately led me to pursue a deeper understanding of software
+            development.
+          </Typography>
+        </CardContent>
+      </Card>
 
       <Card sx={{ mt: 4, width: "100%", boxShadow: 3 }}>
         <CardContent>
@@ -28,10 +49,11 @@ const About: React.FC = () => {
             <Typography variant="h6">Working with People</Typography>
           </Box>
           <Typography variant="body1">
-            Before transitioning to tech, I worked as a nursing assistant, an
-            experience that taught me to listen, stay calm under pressure, and
-            collaborate in different environments. I thrive in team settings and
-            genuinely value good communication and a supportive work culture.
+            Before and during my transitioning to tech, I worked as a nursing
+            assistant. This experience taught me the value of active listening,
+            clear communication, and effective collaboration within a team.
+            These skills are fundamental to how I approach teamwork in any
+            environment.
           </Typography>
         </CardContent>
       </Card>
@@ -43,27 +65,11 @@ const About: React.FC = () => {
             <Typography variant="h6">Curiosity & Problem Solving</Typography>
           </Box>
           <Typography variant="body1">
-            I'm naturally curious and love learning new things. Whether it’s
-            picking up a new framework or finding clean solutions to tricky
-            bugs, I’m quick to adapt and enjoy the problem-solving side of
-            development.
-          </Typography>
-        </CardContent>
-      </Card>
-
-      <Card sx={{ mt: 4, width: "100%", boxShadow: 3 }}>
-        <CardContent>
-          <Box display="flex" alignItems="center" mb={1}>
-            <FavoriteIcon sx={{ color: "primary.main", mr: 1 }} />
-            <Typography variant="h6">Life Outside of Work</Typography>
-          </Box>
-          <Typography variant="body1">
-            I’m into sports and staying active. Right now, I go to the gym and
-            have started jogging. I also enjoy hanging out with people, whether
-            it's after work at a bar or joining in on group activities. At home,
-            I love cooking and trying out new recipes, who can say no to good
-            food. I'm also enjoy reader, whether it’s fiction to unwind or
-            non-fiction to gain new insights.
+            My natural curiosity drives me to continuously learn and explore new
+            concepts, both within and beyond software development. When faced
+            with challenges, I employ a "divide and conquer" methodology,
+            allowing me to analyze issues and efficiently identify effective
+            solutions, a principle I apply directly to my development work.
           </Typography>
         </CardContent>
       </Card>
@@ -75,10 +81,25 @@ const About: React.FC = () => {
             <Typography variant="h6">Hands-On Background</Typography>
           </Box>
           <Typography variant="body1">
-            I grew up on a farm where I helped care for animals and harvest hay.
-            I also spent time fixing cars. I guess you could say I’ve always
-            liked to build and repair things. That mindset naturally evolved
-            into an interest in software and engineering.
+            Growing up on a farm, I learned the value of hard work through
+            animal handling, repairing cars, and building and renovating
+            structures. This hands-on background instilled in me a practical
+            approach to problem-solving, attention to detail, and the
+            satisfaction of building things from the ground up.
+          </Typography>
+        </CardContent>
+      </Card>
+
+      <Card sx={{ mt: 4, width: "100%", boxShadow: 3 }}>
+        <CardContent>
+          <Box display="flex" alignItems="center" mb={1}>
+            <FavoriteIcon sx={{ color: "primary.main", mr: 1 }} />
+            <Typography variant="h6">Life Outside of Work</Typography>
+          </Box>
+          <Typography variant="body1">
+            Beyond the keyboard, I value staying active, connecting with others,
+            and engaging my creativity through hobbies like cooking and
+            exploring various forms of storytelling and knowledge.
           </Typography>
         </CardContent>
       </Card>
