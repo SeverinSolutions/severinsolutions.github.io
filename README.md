@@ -29,3 +29,4 @@ One of the main challenges in this project was deploying a React application to 
 
 To solve this, I used the ``gh-pages`` package, which simplifies the deployment process by pushing the production-ready build to a separate branch configured for GitHub Pages. Additionally, I implemented hash-based routing (``HashRouter`` from ``react-router-dom``) instead of browser-based routing to ensure that all routes function correctly in the static environment.
 
+Another challenge was that GitHub Pages does not provide the ability to use environment files to store sensitive information like a Personal Access Token (PAT) for granting access to private repositories. A simple solution to this was to create a public repository that contains all the relevant documentation for each project that will be displayed on the website.
