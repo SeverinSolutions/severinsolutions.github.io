@@ -10,7 +10,7 @@ import {
 import ProjectCard from "../components/ProjectCard";
 import ArchiveProjectData from "../assets/ArchiveProjectData";
 import CurrentProjectData from "../assets/CurrentProjectData";
-import LegacyProjectData from "../assets/LegacyProjectData";
+import LegacyProjectData from "../assets/ConfidentialData";
 import BuildIcon from "@mui/icons-material/Build";
 import FolderIcon from "@mui/icons-material/Folder";
 import LockIcon from "@mui/icons-material/Lock";
@@ -81,11 +81,10 @@ const Projects: React.FC = () => {
         <CardContent>
           <Box display="flex" alignItems="center" mb={2}>
             <LockIcon sx={{ color: "primary.main", mr: 1 }} />
-            <Typography variant="h6">Legacy & Confidential</Typography>
+            <Typography variant="h6">Confidential</Typography>
           </Box>
           <Typography variant="body2" mb={2}>
-            Projects from university or professional environments, some of which
-            are confidential.
+            Projects from professional environments, which are confidential.
           </Typography>
           <Grid container spacing={2}>
             {LegacyProjectData.map((project, index) => (

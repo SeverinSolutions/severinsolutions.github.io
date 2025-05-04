@@ -74,7 +74,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           <Typography variant="body2" color="text.secondary">
             <strong>Skills:</strong> {skills.join(", ")}
           </Typography>
-          <Button size="small" onClick={handleOpen} disabled={!githubLink}>
+          <Button size="small" onClick={handleOpen} disabled={!githubReadme}>
             Dokument
           </Button>
           <Button

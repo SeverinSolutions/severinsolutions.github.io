@@ -1,15 +1,15 @@
 const CurrentProjectData = [
   {
-    title: "Noberger Tid och Raportering System",
+    title: "Noberger Time and Reporting System",
     image: "/images/nobergergrav.PNG",
     description:
-      "Creating a system to manage time and workers for projects",
-    problem: "Limited budget",
+      "Developing a comprehensive system to efficiently manage project time tracking and worker allocation.",
+    problem: "Currently under development",
     skills: ["React"],
     githubLink:
       "",
     githubReadme:
-      "",
+      "https://raw.githubusercontent.com/SeverinSolutions/documentation/main/nobergergrav-readme.md",
     youtubeLink: "",
   },
 ];

@@ -3,7 +3,7 @@ const LegacyProjectData = [
     title: "Waste Fuel Market Analysis Tool",
     image: "",
     description: "Updated Profu’s Ulven tool to align with new emission fee rules in Sweden.",
-    problem: "Adapted backend and database to support revised reception fee calculations and maintain stability.",
+    problem: "Adapted backend and database to support revised reception fee calculations and update frontend layout.",
     skills: [".NET Framework 4.8", "C#", "Razor"],
     githubLink: "",
     githubReadme: "",
@@ -12,7 +12,7 @@ const LegacyProjectData = [
   {
     title: "Vehicle State Management Application",
     image: "",
-    description: "Enhanced vehicle state filtering and added a changelog to track data changes for Volvo Penta.",
+    description: "Fixed and improved vehicle state filtering and added a changelog to track data changes for Volvo Penta.",
     problem: "Solved nested data model complexities and improved field validation and data sorting.",
     skills: ["React-admin", "MUI", "C#", ".NET"],
     githubLink: "",
@@ -32,7 +32,7 @@ const LegacyProjectData = [
   {
     title: "Educational Reading Web Platform",
     image: "",
-    description: "Upgraded Läskuppen's reading platform to improve navigation, layout, and scalability.",
+    description: "Upgraded Devies Läskuppen's reading platform to improve navigation, layout, and various functionalities.",
     problem: "Enhanced database structure, added admin tools, and expanded API and search functionality.",
     skills: ["React", "SQL", "MUI", "C#", "JavaScript", "HTML", "CSS"],
     githubLink: "",
@@ -42,8 +42,8 @@ const LegacyProjectData = [
   {
     title: "Mobile Incident Reporting Application",
     image: "",
-    description: "Developed a mobile app for incident reporting with automatic image-based description.",
-    problem: "Integrated image analysis and user editing features into Boards On Fire's reporting system.",
+    description: "Developed a mobile app for incident reporting with automatic image-based description for Boards On Fire.",
+    problem: "Integrated image analysis through GPT API and user editing features into the reporting system.",
     skills: ["React Native", "JavaScript", "Node.js"],
     githubLink: "",
     githubReadme: "",
