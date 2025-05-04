@@ -1,11 +1,13 @@
 import React from "react";
-import { Container, Typography, Box } from "@mui/material";
+import { Container, Typography, Box, useTheme } from "@mui/material";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
 import PhoneIcon from "@mui/icons-material/Phone";
 
 const Contact: React.FC = () => {
+  const theme = useTheme();
+
   return (
     <Container
       sx={{
@@ -31,7 +33,7 @@ const Contact: React.FC = () => {
             width: "200px",
             height: "200px",
             objectFit: "cover",
-            border: "6px solid lightblue",
+            border: `6px solid ${theme.palette.primary.main}`,
             boxShadow: "0 5px 12px rgba(0, 0, 0, 0.3)",
           }}
         />
@@ -39,7 +41,7 @@ const Contact: React.FC = () => {
           <Typography variant="h6" fontWeight="bold">
             Johan Lundmark
           </Typography>
-          <Typography variant="subtitle1" sx={{ color: "#0077cc" }}>
+          <Typography variant="subtitle1" sx={{ color: theme.palette.primary.main }}>
             <strong>Software Developer</strong>
           </Typography>
           <Typography variant="subtitle1">Gothenburg</Typography>
