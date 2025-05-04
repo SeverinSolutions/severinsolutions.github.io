@@ -19,7 +19,7 @@ const Projects: React.FC = () => {
   return (
     <Container maxWidth="md" sx={{ mt: 4, mb: 4 }}>
       <Typography variant="h4" component="h1" gutterBottom align="center">
-        Projects
+        Work Showcase
       </Typography>
       <Typography variant="subtitle1" align="center" gutterBottom>
         A selection of my work, from current development to archived and

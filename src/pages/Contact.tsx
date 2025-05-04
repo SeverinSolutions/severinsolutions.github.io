@@ -21,7 +21,7 @@ const Contact: React.FC = () => {
       }}
     >
       <Typography variant="h4" marginBottom={2}>
-        Contact
+        Get in Touch
       </Typography>
 
       <Box display="flex" flexDirection="column" alignItems="center" gap={2}>
