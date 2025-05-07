@@ -36,8 +36,7 @@ const Home: React.FC = () => {
       </Typography>
 
       <Typography variant="subtitle1" component="h2" gutterBottom>
-        I offer a range of services, including website development, system
-        maintenance and debugging, and thorough logical problem-solving.
+        I offer a range of services, including website development, API integrations, debugging, and problem-solving.
       </Typography>
 
       <Card sx={{ mt: 4, width: "100%", boxShadow: 3 }}>

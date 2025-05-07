@@ -44,7 +44,7 @@ const LegacyProjectData = [
     image: "",
     description: "Developed a mobile app for incident reporting with automatic image-based description for Boards On Fire.",
     problem: "Integrated image analysis through GPT API and user editing features into the reporting system.",
-    skills: ["React Native", "JavaScript", "Node.js"],
+    skills: [".NET MAUI", "API", "Postman"],
     githubLink: "",
     githubReadme: "",
     youtubeLink: "",
