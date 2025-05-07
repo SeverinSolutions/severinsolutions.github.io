@@ -51,7 +51,7 @@ const Contact: React.FC = () => {
       <Box mt={3}>
         <Box display="flex" alignItems="center" mb={1}>
           <EmailIcon sx={{ mr: 1 }} />
-          <Typography variant="body1">lundmark.johan.connect@gmail.com</Typography>
+          <Typography variant="body1">johan.lundmark.connect@gmail.com</Typography>
         </Box>
         <Box display="flex" alignItems="center">
           <PhoneIcon sx={{ mr: 1 }} />
