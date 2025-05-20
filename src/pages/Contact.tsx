@@ -33,7 +33,7 @@ const Contact: React.FC = () => {
             width: "200px",
             height: "200px",
             objectFit: "cover",
-            border: `6px solid ${theme.palette.primary.main}`,
+            border: "6px solid #d4e3f5",
             boxShadow: "0 5px 12px rgba(0, 0, 0, 0.3)",
           }}
         />

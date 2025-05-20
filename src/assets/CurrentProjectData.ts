@@ -19,7 +19,7 @@ const CurrentProjectData = [
     problem:
       "The original goal was to automate job tracking and analytics using AI, but budget constraints currently limit the project to manual input and basic statistical tracking.",
     skills: ["Vite", "React", "MUI", "TypeScript", "Python", "SQL"],
-    githubLink: "",
+    githubLink: "https://github.com/SeverinSolutions/jobhunter",
     githubReadme:
       "https://raw.githubusercontent.com/SeverinSolutions/documentation/main/jobhunter-readme.md",
     youtubeLink: "",

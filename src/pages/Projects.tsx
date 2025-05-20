@@ -32,7 +32,7 @@ const Projects: React.FC = () => {
           boxShadow: 0,
           display: "flex",
           justifyContent: "center",
-          backgroundColor: "#e5e5e5",
+          backgroundColor: "#e1ecf8",
         }}
       >
         <CardContent>
@@ -84,7 +84,7 @@ const Projects: React.FC = () => {
             <Typography variant="h6">Confidential</Typography>
           </Box>
           <Typography variant="body2" mb={2}>
-            Projects from professional environments, which are confidential.
+            Projects from professional environments.
           </Typography>
           <Grid container spacing={2}>
             {LegacyProjectData.map((project, index) => (
