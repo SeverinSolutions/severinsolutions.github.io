@@ -1,17 +1,5 @@
 const CurrentProjectData = [
   {
-    title: "Excavation Time and Reporting System",
-    image: "/images/nobergergrav.PNG",
-    description:
-      "Developing a comprehensive system to efficiently manage project time tracking and worker allocation.",
-    problem: "Currently under development",
-    skills: ["ASP.NET"],
-    githubLink: "",
-    githubReadme:
-      "https://raw.githubusercontent.com/SeverinSolutions/documentation/main/nobergergrav-readme.md",
-    youtubeLink: "",
-  },
-  {
     title: "Jobhunter Management Application",
     image: "/images/jobhunter.PNG",
     description:
