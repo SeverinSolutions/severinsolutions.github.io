@@ -36,7 +36,8 @@ const Home: React.FC = () => {
       </Typography>
 
       <Typography variant="subtitle1" component="h2" gutterBottom>
-        I offer a range of services, including website development, API integrations, debugging, and problem-solving.
+        I enjoy working on everything from website development and API integrations
+        to debugging and solving practical software challenges.
       </Typography>
 
       <Card sx={{ mt: 4, width: "100%", boxShadow: 3 }}>
@@ -82,20 +83,20 @@ const Home: React.FC = () => {
       <Card sx={{ mt: 4, width: "100%", boxShadow: 3 }}>
         <CardContent>
           <Typography variant="h6" component="h3" gutterBottom>
-            Explore More About What I Do
+            Explore My Projects and Background
           </Typography>
           <List>
             <ListItem>
               <WorkIcon sx={{ color: "primary.main", mr: 2 }} />
-              <ListItemText primary="Explore my portfolio for real-world examples of my work." />
+              <ListItemText primary="See my portfolio for examples of my recent work and projects." />
             </ListItem>
             <ListItem>
               <ContactPageIcon sx={{ color: "primary.main", mr: 2 }} />
-              <ListItemText primary="Actively seeking new freelance, contract, or full-time opportunities. Let's connect!" />
+              <ListItemText primary="Open to opportunities in teams, programs, or projects where I can contribute and grow." />
             </ListItem>
             <ListItem>
               <InfoIcon sx={{ color: "primary.main", mr: 2 }} />
-              <ListItemText primary="Curious to learn more about my journey and values? Head over to my about page." />
+              <ListItemText primary="Visit the about page to learn more about my background and approach." />
             </ListItem>
           </List>
         </CardContent>

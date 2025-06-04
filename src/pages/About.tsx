@@ -21,7 +21,8 @@ const About: React.FC = () => {
         Beyond my technical skills as a software developer, I understand the
         importance of a strong team environment. I bring valuable life
         experience, a natural curiosity, and a collaborative spirit to every
-        project and team I become a part of.
+        project and team I become a part of. Whether in tech or life, I value
+        learning, clarity, and meaningful collaboration.
       </Typography>
 
       <Card sx={{ mt: 4, width: "100%", boxShadow: 3 }}>
@@ -35,9 +36,8 @@ const About: React.FC = () => {
             advanced tools, leading me to pursue civil engineering in
             electronics. It was during this education that I was introduced to
             programming. I found myself increasingly drawn to it, spending more
-            time coding than on other subjects. This growing enjoyment
-            ultimately led me to pursue a deeper understanding of software
-            development.
+            time coding than on other subjects. This growing interest led me to
+            pursue software development more seriously.
           </Typography>
         </CardContent>
       </Card>
@@ -49,7 +49,7 @@ const About: React.FC = () => {
             <Typography variant="h6">Working with People</Typography>
           </Box>
           <Typography variant="body1">
-            Before and during my transitioning to tech, I worked as a nursing
+            Before and during my transition into tech, I worked as a nursing
             assistant. This experience taught me the value of active listening,
             clear communication, and effective collaboration within a team.
             These skills are fundamental to how I approach teamwork in any
@@ -67,9 +67,8 @@ const About: React.FC = () => {
           <Typography variant="body1">
             My natural curiosity drives me to continuously learn and explore new
             concepts, both within and beyond software development. When faced
-            with challenges, I employ a "divide and conquer" methodology,
-            allowing me to analyze issues and efficiently identify effective
-            solutions, a principle I apply directly to my development work.
+            with challenges, I apply a divide-and-conquer mindset to break
+            problems down and work efficiently toward a solutions.
           </Typography>
         </CardContent>
       </Card>
@@ -97,7 +96,7 @@ const About: React.FC = () => {
             <Typography variant="h6">Life Outside of Work</Typography>
           </Box>
           <Typography variant="body1">
-            Beyond the keyboard, I value staying active, connecting with others,
+            Outside of programming, I value staying active, connecting with others,
             and engaging my creativity through hobbies like cooking and
             exploring various forms of storytelling and knowledge.
           </Typography>

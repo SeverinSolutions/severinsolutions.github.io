@@ -14,7 +14,7 @@ const Header: React.FC = () => {
           SeverinSolutions
         </Typography>
         <IconButton component={Link} to="/" color="inherit" aria-label="home">
-          <HomeIcon />
+          <HomeIcon sx={{ display: { xs: "block", sm: "none" }}}/>
           <Typography
             variant="h6"
             sx={{ display: { xs: "none", sm: "block" } }}
@@ -28,7 +28,7 @@ const Header: React.FC = () => {
           color="inherit"
           aria-label="home"
         >
-          <InfoIcon />
+          <InfoIcon sx={{ display: { xs: "block", sm: "none" }}} />
           <Typography
             variant="h6"
             sx={{ display: { xs: "none", sm: "block" } }}
@@ -42,7 +42,7 @@ const Header: React.FC = () => {
           color="inherit"
           aria-label="projects"
         >
-          <WorkIcon />
+          <WorkIcon sx={{ display: { xs: "block", sm: "none" }}} />
           <Typography
             variant="h6"
             sx={{ display: { xs: "none", sm: "block" } }}
@@ -56,7 +56,7 @@ const Header: React.FC = () => {
           color="inherit"
           aria-label="contact"
         >
-          <ContactPageIcon />
+          <ContactPageIcon sx={{ display: { xs: "block", sm: "none" }}}/>
           <Typography
             variant="h6"
             sx={{ display: { xs: "none", sm: "block" } }}
