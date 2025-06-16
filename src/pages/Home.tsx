@@ -8,9 +8,9 @@ import {
   ListItem,
   ListItemText,
 } from "@mui/material";
-import WorkIcon from "@mui/icons-material/Work";
 import InfoIcon from "@mui/icons-material/Info";
 import ContactPageIcon from "@mui/icons-material/ContactPage";
+import CodeIcon from '@mui/icons-material/Code';
 
 const Home: React.FC = () => {
   return (
@@ -35,9 +35,14 @@ const Home: React.FC = () => {
         tech teams.
       </Typography>
 
+      <Typography variant="body1" gutterBottom>
+        This site is my personal portfolio, showcasing my work and interests in
+        software development.
+      </Typography>
+
       <Typography variant="subtitle1" component="h2" gutterBottom>
-        I enjoy working on everything from website development and API integrations
-        to debugging and solving practical software challenges.
+        I enjoy working on everything from website development and API
+        integrations to debugging and solving practical software challenges.
       </Typography>
 
       <Card sx={{ mt: 4, width: "100%", boxShadow: 3 }}>
@@ -87,8 +92,8 @@ const Home: React.FC = () => {
           </Typography>
           <List>
             <ListItem>
-              <WorkIcon sx={{ color: "primary.main", mr: 2 }} />
-              <ListItemText primary="See my portfolio for examples of my recent work and projects." />
+              <CodeIcon sx={{ color: "primary.main", mr: 2 }} />
+              <ListItemText primary="See my projects for examples of my recent work and contributions." />
             </ListItem>
             <ListItem>
               <ContactPageIcon sx={{ color: "primary.main", mr: 2 }} />

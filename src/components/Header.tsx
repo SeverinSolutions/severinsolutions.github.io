@@ -10,8 +10,8 @@ const Header: React.FC = () => {
   return (
     <AppBar position="static">
       <Toolbar>
-        <Typography variant="h5" sx={{ flexGrow: 1 }}>
-          SeverinSolutions
+        <Typography variant="h4" sx={{ flexGrow: 1 }}>
+          Portfolio
         </Typography>
         <IconButton component={Link} to="/" color="inherit" aria-label="home">
           <HomeIcon sx={{ display: { xs: "block", sm: "none" }}}/>
