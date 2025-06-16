@@ -1,6 +1,6 @@
 const ArchiveProjectData = [
   {
-    title: "SeverinSolutions Webpage",
+    title: "Personal Portfolio",
     image: "/images/ss-webpage.png",
     description:
       "A clean, responsive portfolio site showcasing my IT background, projects, and contact information.",
