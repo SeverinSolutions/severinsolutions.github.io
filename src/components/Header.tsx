@@ -2,9 +2,9 @@ import React from "react";
 import { AppBar, Toolbar, Typography, IconButton } from "@mui/material";
 import { Link } from "react-router-dom";
 import HomeIcon from "@mui/icons-material/Home";
-import WorkIcon from "@mui/icons-material/Work";
 import ContactPageIcon from "@mui/icons-material/ContactPage";
 import InfoIcon from "@mui/icons-material/Info";
+import CodeIcon from '@mui/icons-material/Code';
 
 const Header: React.FC = () => {
   return (
@@ -42,7 +42,7 @@ const Header: React.FC = () => {
           color="inherit"
           aria-label="projects"
         >
-          <WorkIcon sx={{ display: { xs: "block", sm: "none" }}} />
+          <CodeIcon sx={{ display: { xs: "block", sm: "none" }}} />
           <Typography
             variant="h6"
             sx={{ display: { xs: "none", sm: "block" } }}
